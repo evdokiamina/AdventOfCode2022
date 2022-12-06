@@ -4,7 +4,7 @@ var readTextFile_1 = require("./readTextFile");
 var data = (0, readTextFile_1.readFile)("data.txt");
 var tempCals = 0;
 var listOfMax = [];
-data.forEach(function (item, index) {
+data.forEach(function (item) {
     if (item === "") {
         listOfMax.push(tempCals);
         tempCals = 0;
