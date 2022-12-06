@@ -1,7 +1,8 @@
 # Dependecies
-node_modules
+**/node_modules
 
 # Compiled Files
+**/*.js
 
 
 # Folders to ignore because they haven't been solved
