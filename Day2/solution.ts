@@ -1,4 +1,3 @@
-import { lookupService } from "dns";
 import { readFile } from "./readTextFile";
 
 const data = readFile("data.txt");
@@ -41,29 +40,18 @@ const combosOutcomes = {
   CZ: shapePoints[rock] + won.score,
 };
 
-// 2 % 3 === 1 // true // scissors
-// 1 % 3 === 2 // false //
-
 let totalScore = 0;
 
-data.forEach((item, index) => {
+data.forEach((item) => {
   totalScore = totalScore + combosOutcomes[item.replace(" ", "")];
-
-  const replaces = item
-    .replace("X", "0")
-    .replace("Y", "1")
-    .replace("Z", "2")
-    .replace("A", "0")
-    .replace("B", "1")
-    .replace("C", "2");
 
   const p1 = +item[0];
   const p2 = +item[1];
-  //rock - lose // A - X // 0 - 0
-  // 1 % 3 // 1 === 1
+
   if ((p1 + 1) % 3 === p2) {
     console.log("p1 won");
   }
 });
 
-console.log(totalScore);
+// Missed saving the first one
+console.log(totalScore); //8295

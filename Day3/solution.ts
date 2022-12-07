@@ -99,34 +99,7 @@ for (let j = 0; j < data.length - 2; j = j + 3) {
       totalScore = totalScore + scores[key];
     }
   });
-  // allLetters.map((letter) => {
-  //   console.log(letter);
-  // });
-  // const middle = element.length / 2;
-  // const pair = [
-  //   element.slice(0, middle),
-  //   element.slice(middle, element.length),
-  // ];
-  // const pair2 = [
-  //   element2.slice(0, middle),
-  //   element2.slice(middle, element.length),
-  // ];
-  // const pair3 = [
-  //   element3.slice(0, middle),
-  //   element3.slice(middle, element.length),
-  // ];
-  // let singleLetter1;
-  // let singleLetter2;
-  // let singleLetter3;
-
-  // for (let i = 0; i < element.length / 2; i++) {
-  //   const splitArr = pair[1].split("");
-  //   if (splitArr.includes(pair[0][i])) {
-  //     totalScore = totalScore + scores[pair[0][i]];
-  //     break;
-  //   }
-  // }
-  // tempGroup++;
 }
 
-console.log(totalScore);
+console.log(totalScore); // 2973
+// Seems i deleted part-2 by accident

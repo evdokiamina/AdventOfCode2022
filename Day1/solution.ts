@@ -17,6 +17,7 @@ listOfMax.sort(function (a, b) {
   return a - b;
 });
 
+// Missed saving part - 1
 console.log(
   listOfMax[listOfMax.length - 1] +
     listOfMax[listOfMax.length - 2] +
