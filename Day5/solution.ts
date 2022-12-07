@@ -45,4 +45,4 @@ const ans = Object.keys(cratesDic).map((item) => {
 });
 
 const answer = ans.join("");
-console.log(answer);
+console.log(answer); //MCD
